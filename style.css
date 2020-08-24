@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+  
+}
+nav a:last-child{
+  padding-top: 25px;
+}
+
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#divPagPrincipal{
+	position: absolute;
+	top: 15%;
+	left: 0;
+	width: 100%;
+
+}
+p{
+  text-align: center;
+  text-align: justify;
+  padding: 2rem;
+}
+.contenedorImg{
+  margin: 0 2rem;
+}
+
+h1{
+  font-size: 3.5rem;
+  color: #222222;
+  text-align: center;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+/*
+ ANIMACION TEXTO PRINCIPAL
+ */
+
+.glitch-window{
+	position: absolute;
+	top: 13%;
+	left: -2px;
+	width: 100%;
+	color: #008080;
+	text-shadow: 2px 0 #008080, -1px 0 white, -2px 0 #008080;
+  overflow: hidden;
+	animation: crt-me 2500ms infinite linear alternate-reverse;
+}
+
+/*Animation Keyframes*/
+@keyframes crt-me{
+	0% {
+    clip: rect(21px, 9999px, 44px, 0)
+  }
+  10% {
+    clip: rect(82px, 9999px, 56px, 0)
+  }
+  20% {
+    clip: rect(45px, 9999px, 47px, 0)
+  }
+  30% {
+     clip: rect(17px, 9999px, 57px, 0)
+  }
+  40% {
+    clip: rect(34px, 9999px, 58px, 0)
+  }
+  50% {
+     clip: rect(31px, 9999px, 45px, 0)
+  }
+  60% {
+    clip: rect(69px, 9999px, 94px, 0)
+  }
+  70% {
+    clip: rect(24px, 9999px, 85px, 0)
+  }
+  80% {
+    clip: rect(58px, 9999px, 69px, 0)
+  }
+  90% {
+    clip: rect(23px, 9999px, 66px, 0)
+  }
+  100% {
+    clip: rect(42px, 9999px, 34px, 0)
+  }
+    
+}
+/*fin animacion*/
+
+#contenedorformulario{
+  display: none;
+  height: 320px;
+  margin-bottom: 2rem;
+}
+
+/*InspirationButton*/
+
+.contenedorbutton2{
+  margin: 2rem auto 0 auto;
+}
+.inspiration-button{
+  margin: auto;
+	font-family: Helvetica, sans-serif;
+	display: block;
+	z-index: 100;
+	color: white;
+	text-decoration: none;
+  padding: 0.75rem 1rem;
+  width: 150px;
+	border-radius: 80px;
+  background: linear-gradient(270deg,#45B39D,#008080);
+  transition: 250ms ease;
+}
+.inspiration-button:hover{
+  transform: translate(0%, -10%);
+}
+.inspiration-button:focus{
+  outline: none;
+}
+
+.product-device {
+  position: absolute;
+  right: 650px;
+  bottom: -25%;
+  width: 250px;
+  height: 450px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  left: 610px;
+  background-color: #e5e5e5;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 3rem 0;
+  align-items: center;
+}
+
+.redes p{
+  padding: 0;
+  margin: 2rem 0;
+}
+.iconos {
+  width: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.iconos a {
+  color: #333;
+  transition: ease-in-out color .15s;
+}
+.iconos a:hover{
+  -webkit-transform:scale(1.4);transform:scale(1.4);
+}
+#formularioAdm{
+  display: none;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media (min-width: 768px) {
+  #divPagPrincipal{
+    top: 15%;
+  }
+  h1{
+    font-size: 6rem;
+  }
+  .contenedorImg{
+    overflow:hidden;
+    height: 550px;
+  }
+  .imgEvento:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+    transition:all .6s ease-in-out;
+  }
+  /*Animation Keyframes*/
+  @keyframes crt-me{
+    0% {
+      clip: rect(31px, 9999px, 94px, 0)
+    }
+    10% {
+      clip: rect(112px, 9999px, 76px, 0)
+    }
+    20% {
+      clip: rect(85px, 9999px, 77px, 0)
+    }
+    30% {
+      clip: rect(27px, 9999px, 97px, 0)
+    }
+    40% {
+      clip: rect(64px, 9999px, 98px, 0)
+    }
+    50% {
+      clip: rect(61px, 9999px, 85px, 0)
+    }
+    60% {
+      clip: rect(99px, 9999px, 114px, 0)
+    }
+    70% {
+      clip: rect(34px, 9999px, 115px, 0)
+    }
+    80% {
+      clip: rect(98px, 9999px, 129px, 0)
+    }
+    90% {
+      clip: rect(43px, 9999px, 96px, 0)
+    }
+    100% {
+      clip: rect(82px, 9999px, 64px, 0)
+    }
+  }
+  p{
+    padding: 2rem 4rem;
+  }
+  .contenedorbutton2{
+    padding: 1.7rem 0 0 5rem;
+    margin: 0;
+  }
+  .redes{
+    margin-top: 1rem;
+  }
+  .redes p{
+    padding: 0;
+    margin: 2rem 0;
+  }
+
+  #formularioAdm{
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .contenedorbutton3{
+    margin-top: 2rem;
+  }
+}
+
