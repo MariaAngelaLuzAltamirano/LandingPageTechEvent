@@ -7,7 +7,7 @@ const {
   saveRegistries,
 } = require('../controllers/google.controller')
 
-router.get('/', getRegistries);
-router.post('/', saveRegistries )
+router.get('/invitados', getRegistries)
+router.post('/invitados', saveRegistries )
 
 module.exports = router;

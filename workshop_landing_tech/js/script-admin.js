@@ -69,4 +69,14 @@ $(document).ready(function() {
 
 
 
+async function getInvitados() {
+    let endPoint = "http://localhost:3000/invitados";
+    const resp = await fetch(endPoint);
+    return resp;
+};
+
+getInvitados()
+.then(resp => resp.text())
+.then(data => console.log(data))
+.catch(error => console.log("ERROR", error));
 
