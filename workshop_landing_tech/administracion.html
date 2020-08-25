@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-admin.css">
+</head>
+<body>
+    <section id="administracion">
+        <div id="header-admin">
+            <div id="admin">
+                <a href="index.html"><p>Administración</p></a>
+            </div>
+            <div id="nav-admin">
+                <div class="icon">
+                    <i id="bell" class="fas fa-bell"></i>
+                    <div id="newsBell"><p>12</p></div>
+                </div>
+                <div class="icon">
+                    <i id="email" class="fas fa-envelope"></i>
+                    <div id="newsMail"><p>18</p></div>
+                </div>
+                <ul id="lista-invitados">
+                    <li>
+                        <p class="nombre">Mauricio Cucco</p>
+                        <p>asistirá</p>
+                        <i class="fas fa-check"></i>
+                    </li>
+                    <li>
+                        <p class="nombre">María Altamirano</p>
+                        <p>asistirá</p>
+                        <i class="fas fa-check"></i>
+                    </li>
+                    <li>
+                        <p class="nombre">Ricardo Trejos</p>
+                        <p>asistirá</p>
+                        <i class="fas fa-check"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div id="estadisticas">
+                <div class="numeros confirmados">
+                    <i class="fas fa-check-circle icon-estad"></i>
+                    <p id="numero-asisten" class="number-estad">0</p>
+                    <p class="contenido-estad">CONFIRMADOS</p>
+                </div>
+                <div class="numeros cancelados">
+                    <i class="fas fa-window-close icon-estad"></i>
+                    <p id="numero-cancelados" class="number-estad">0</p>
+                    <p class="contenido-estad">CANCELADOS</p>
+                </div>
+                <div class="numeros">
+                    <i class="far fa-address-card icon-estad"></i>
+                    <p id="numero-disponibles" class="number-estad">0</p>
+                    <p class="contenido-estad">DISPONIBLES</p>
+                </div>
+            </div>
+            <div id="cancelados">
+                <table class="tabla-invitados">
+                    <caption class="caption-cancelados">Invitados cancelados</caption>
+                    <tr>
+                      <th>NOMBRE</th>
+                      <th>APELLIDO</th>
+                      <th>EMAIL</th>
+                    </tr>
+                    <tr>
+                      <td>Mauricio</td>
+                      <td>Cucco</td>
+                      <td ><a class="mailto" href="">mauri@acamica.com</a></td>
+                    </tr>
+                    <tr>
+                      <td>Maria</td>
+                      <td>Altamirano</td>
+                      <td ><a class="mailto" href="">maria@acamica.com</a></td>
+                    </tr>
+                    <tr>
+                      <td>Ricardo</td>
+                      <td>Trejos</td>
+                      <td ><a class="mailto" href="">ricardo@acamica.com</a></td>
+                    </tr>
+                  </table>
+            </div>
+            <div id="invitados">
+                <table class="tabla-invitados confirmados">
+                    <caption class="caption-invitados confirmados">Invitados confirmados</caption>
+                    <tr class="secciones">
+                      <th>NOMBRE</th>
+                      <th>APELLIDO</th>
+                      <th>EMAIL</th>
+                      <th>CANCELAR</th>
+                    </tr>
+                    <tr class="row-invitados">
+                      <td>Mauricio</td>
+                      <td>Cucco</td>
+                      <td ><a class="mailto" href="">mauri@acamica.com</a></td>
+                      <td class="eliminar"><i class="fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr class="row-invitados">
+                      <td>Maria</td>
+                      <td>Altamirano</td>
+                      <td ><a class="mailto" href="">maria@acamica.com</a></td>
+                      <td class="eliminar"><i class="fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr class="row-invitados">
+                      <td>Ricardo</td>
+                      <td>Trejos</td>
+                      <td ><a class="mailto" href="">ricardo@acamica.com</a></td>
+                      <td class="eliminar"><i class="fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr class="row-invitados">
+                        <td>Mauricio</td>
+                        <td>Cucco</td>
+                        <td ><a class="mailto" href="">mauri@acamica.com</a></td>
+                        <td class="eliminar"><i class="fas fa-trash-alt"></i></td>
+                      </tr>
+                      <tr class="row-invitados">
+                        <td>Maria</td>
+                        <td>Altamirano</td>
+                        <td ><a class="mailto" href="">maria@acamica.com</a></td>
+                        <td class="eliminar"><i class="fas fa-trash-alt"></i></td>
+                      </tr>
+                      <tr class="row-invitados">
+                        <td>Ricardo</td>
+                        <td>Trejos</td>
+                        <td ><a class="mailto" href="">ricardo@acamica.com</a></td>
+                        <td class="eliminar"><i class="fas fa-trash-alt"></i></td>
+                      </tr>
+                  </table>
+            </div>
+        </main>
+    </section>
+    <script src="https://kit.fontawesome.com/a027afbbf3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/script-admin.js"></script>
+</body>
+</html>

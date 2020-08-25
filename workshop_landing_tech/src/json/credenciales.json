@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cardotrejosdev",
+  "private_key_id": "61bfbd3d8b9d9916b87be3c54f941fc7b7d06a42",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCzhhZFoyL8kv3B\nH8rY5kEZyUy60oDFWzeN54FUaiTsmVm0aF/J1psVTjC6dJ5nUeT/MOQA+rcTJMpI\n2HaDgwdR2fz622iYpKeYEfMZt2aFVnDon63qfzTP0WV1b/j+p6B4B0mHQ59WaQUX\n9KaJClI9LIoXR+5RDALE/6+j/8BsNxlFjpjEcg+Z9yDS06o/SycLDEzA2GFj4qan\nQf4yuJ1utYBad9g9ijrokJgC6KVf4jtwyFtg/lKSH7vG8uHZUb3y1iuuF8fssLxE\npLNkLC7GCvLyX6I0jeI+RbAeYokO7UE0tCunUFRkhBs7QMTF2C04wuWUAHvynG3j\n6btmIBABAgMBAAECggEAAm1nzleWQNhKzlaqxGxx+lJWmsc6SxXFfHhYUabv1tYj\nv+OhA3pG5ETMcSRaB5JqiZ0HBguskJwG/QT4uH122Vp/CBabzzxnyXwAfmKebfb/\nnPI4jBwiyXVp1v5qWGm/jUQ64YkoZvDgd1m+cMn1OebLZ5Y4V34VcqgcKR0S33ic\nQhIBBnYdt1SwJFoSfW9HknYbTrc3v0CKgXzHbM6TIxp5zoY72H9WPqLHepPvCbPp\nND1dHL2y1DkzXf3pt1DvsvIssegh9UJn9w4DMN017nIbjptuifQifcXqV4jZHtPb\nmB03YftnBIXGNlGwOiKRtkpbpvZmuDC8gVDyimiXJQKBgQDxsv0Z5x4ORR742SWn\nlGpU32u68ipUnVkUPQzo/qmyPV4Qlm0r5ZbgqdkZInBqg/ksT2f1SSkPSo0TqER+\na5Cbqf7Cu+GtrG8rU9olViK5DhN+CrPLGr4hq18sfRaE/gOe8YFfyzl77nvkrqVe\nh1e3Wro59M/PVU9ZTIaEli4/vQKBgQC+JVRC1ZknyVdbDFiVAINn53DV1oGPSBFt\nmxkuAyyHrCUZr6QCLycLeS7xXuAcHnF6VWh5nmsczSDZrSob2ZF766SBy58VMAit\niS3GZbNciiBmtCawieQ/EeK98h8ewTkGWyovmVmQUe+T/EQVixzAnt+UnLD5d6m8\nsOEsw8jDlQKBgGD9fZm2aBY74JjlsrmT0jOq0HVdlmUMG2IGubaJ8xkGjUfExZx2\n7lvLbMYsTsY/nW8Nkl8Y87QiK4i23n2ItqfwyL3mXUKvTpEpfgG7lgWCw4mxy8J2\nQdQLDA8zRyUpNdTDfzIswC2eXvM+rjfHwghfDRoSxo2h40yna9eq2HZVAoGBAKjh\nALCHg4qZwZNlKLvWA9/h6A6UgOegK5J8oWWDfiZV13Gz1Of3tybyj6XjDQsMYt8z\nQiJaeGnRKm8K5I5ts1ArnyWEkxs/WUW/w78lDqOPLm3pbT94iRcXLJpllAw9swcZ\nKyOxgKG0lCOMd2/m6TePI6abcHdxN3kWZDfc/8/tAoGBAITTr6KNYXlr+4g3l1Yz\nVWqIVbhbISnhu2QecOZG8u+gnvb5pJhpjpfRPomkuGlJB7fIjU2MNS/DCwVuXKhW\nb3FxA7reKzqqC0b94re15NGg9eOf04zsESRriXOxamCLI4nQLbnfSaDfy8rI5O8z\nHvrwfOTed86Fbbi/jRJ+DaTm\n-----END PRIVATE KEY-----\n",
+  "client_email": "googlesheet@cardotrejosdev.iam.gserviceaccount.com",
+  "client_id": "114203745811144726786",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/googlesheet%40cardotrejosdev.iam.gserviceaccount.com"
+}

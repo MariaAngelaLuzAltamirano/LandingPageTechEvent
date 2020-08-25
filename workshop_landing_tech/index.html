@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/646f6cafb0.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <nav class="site-header sticky-top">
+      <div class="container d-flex flex-md-row justify-content-between">
+          <a class="" href="index.html"><img src="./img/CyHU-kFXcAAfyZv.png" alt="logo" height="80" width="140"></a>
+          <a id="administrador">Administrador</a>
+      </div>
+    </nav>
+    <div id="divPagPrincial">
+      <h1 class="glitched glitch-window">Tech Event</h1>
+      <h1 class="glitched">Tech Event</h1>
+      <div class="contenedorImg">
+        <img class="imgEvento" src="img/14480532_490561877820362_5925827473719215237_o.jpg_1484051676.jpg" alt="" width="100%" height="100%">
+      </div>
+      <p class="lead font-weight-normal">El Córdoba Technology Cluster organiza la sexta edición del #CórdobaTechDay el 12 y 13 de septiembre. Es un evento que se propone analizar y aprovechar la vorágine tecnológica actual. "En la era del conocimiento, el talento, la transformación digital y la diversidad son algunas de las fuentes más importantes de generación de valor en las organizaciones del siglo 21", explican los organizadores.</p>
+      <div class="contenedorbutton1">
+        <button class="inspiration-button" href="" id="registrarse">Registrarse</button>
+      </div>
+    </div>
+    <div class="text-center" id="contenedorformulario">
+      <div class="col-md-5 mx-auto my-5">
+        <h2>Formulario de Registro</h2>
+        <hr>
+        <form>
+            <div class="row">
+                <div class="col">
+                <label>Nombre</label>
+                <input type="text" class="form-control" placeholder="Juan Manuel" id="nombre">
+                </div>
+                <div class="col">
+                <label>Apellido</label>
+                <input type="text" class="form-control" placeholder="Perez" id="apellido">
+                </div>
+            </div>
+            <br>
+            <div class="form-row">
+                <div class="form-group col-md-6 pr-0">
+                  <label>Email</label>
+                  <input type="email" class="form-control" id="email" placeholder= "cosmefulanito@xxxx.com" >
+                  <small id="emailHelp" class="form-text text-muted">No se admiten email con prestadores @hotmail, @gmail, @yahoo.</small>
+                </div>
+                <div class="contenedorbutton2">
+                  <button class="inspiration-button" type="submit" id="enviar">Enviar</button>
+                </div>
+            </div>
+            <br>
+        </form>
+        <div>
+          <div class="product-device shadow-sm d-none d-md-block"></div>
+          <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div>
+      <form class="text-center pt-4 mx-auto my-4" id="formularioAdm">
+        <div class="form-group mb-5">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="emailAdm" placeholder= "cosmefulanito@xxxx.com">
+          <small id="emailHelp" class="form-text text-muted">Ingreso solo permitido para el Administrador.</small>
+        </div>
+        <div class="form-group mb-4">
+          <label for="exampleInputPassword1">Password</label>
+          <div class="input-group">
+            <input type="password" class="form-control" id="password">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="mostrarContrasena()">Mostrar</button>
+            </div>
+          </div>
+        </div>
+        <div class="contenedorbutton3">
+          <button type="submit" class="inspiration-button" id="iniciarSesion">Iniciar Sesion</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class= "redes">
+          <p>NO© 2020 — Córdoba Tech Company</p>
+          <div class="iconos">
+              <a href="https://www.spotify.com/ar/"><i class="fab fa-spotify"></i></a>
+              <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+              <a href="https://web.telegram.org/#/login"><i class="fab fa-telegram"></i></a>
+          </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
