@@ -1,6 +1,6 @@
 class Invitado {
-    constructor(firstName, lastName, email){
-        this.firstName= firstName ;
+    constructor(firstName, lastName, email) {
+        this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
     }
@@ -27,22 +27,22 @@ let emailAdmIng;
 let passwordIng;
 
 let administradores = [
-    {emailAdm: "mauri@acamica.com", password:"cucco2020"},
-    {emailAdm: "ricardo@acamica.com", password:"trejo2020"},
-    {emailAdm: "maria@acamica.com", password:"alta2020"}
+    { emailAdm: "mauri@acamica.com", password: "cucco2020" },
+    { emailAdm: "ricardo@acamica.com", password: "trejo2020" },
+    { emailAdm: "maria@acamica.com", password: "alta2020" }
 ]
 
 let invitadosRegistrados;
 
 //EVENTOS 
 
-registrarse.addEventListener('click', () =>{
+registrarse.addEventListener('click', () => {
     pagPrincipal.style.display = "none";
     formAdministrador.style.display = "none";
     contenedorPrincipal.style.display = "block";
 })
 
-administrador.addEventListener('click', () =>{
+administrador.addEventListener('click', () => {
     pagPrincipal.style.display = "none";
     contenedorPrincipal.style.display = "none";
     formAdministrador.style.display = "block";
@@ -59,11 +59,11 @@ enviar.addEventListener('click', registroInvitado);
 
 //FUNCIONES
 
-function mostrarContrasena(){
+function mostrarContrasena() {
 
-    if(password.type == "password"){
+    if (password.type == "password") {
         password.type = "text";
-    }else{
+    } else {
         password.type = "password";
     }
 }
@@ -76,103 +76,103 @@ function validarCampo() {
     campoVacio(this);
 
     //se valida email solamente
-    if(this.type === 'email'){
+    if (this.type === 'email') {
 
-        if(this.id == 'email'){
+        if (this.id == 'email') {
             validarEmail(this);
-        }else{
+        } else {
             validarEmailAdm(this)
         }
     }
 
     let errores = document.querySelectorAll('.error');
 
-    
 
-    if(emailAdm.value !== '' && password.value !== ''){
-        if(errores.length === 0){
-        iniciarSes.disabled = false;
-        }else{
-        iniciarSes.disabled = true;
+
+    if (emailAdm.value !== '' && password.value !== '') {
+        if (errores.length === 0) {
+            iniciarSes.disabled = false;
+        } else {
+            iniciarSes.disabled = true;
         }
     }
 
-    function campoVacio(campo){
-        if(campo.value.length> 0){
+    function campoVacio(campo) {
+        if (campo.value.length > 0) {
             campo.style.borderBottomColor = 'green';
             campo.classList.remove('error');
-        }else{
+        } else {
             campo.style.borderBottomColor = 'red';
             campo.classList.add('error');
         }
     }
-    
-    function validarEmail(campo){
-        
+
+    function validarEmail(campo) {
+
         const validador = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w+)+$/;
 
-        if(validador.test(campo.value)){
+        if (validador.test(campo.value)) {
             let palabraIncorrecta1 = "hotmail";
             let palabraIncorrecta2 = "gmail";
             let palabraIncorrecta3 = "yahoo";
             console.log(campo.value);
-            if(campo.value.search(palabraIncorrecta1) >= 0 || campo.value.search(palabraIncorrecta2) >= 0 || campo.value.search(palabraIncorrecta3) >= 0){
-               campo.style.borderBottomColor = 'red';
-               campo.classList.add('error');
+            if (campo.value.search(palabraIncorrecta1) >= 0 || campo.value.search(palabraIncorrecta2) >= 0 || campo.value.search(palabraIncorrecta3) >= 0) {
+                campo.style.borderBottomColor = 'red';
+                campo.classList.add('error');
                 alert('No esta ingresando un prestador permitido, ingrese otro email por favor');
             }
-            else{
+            else {
                 investigarEmail();
             }
-        }else{
+        } else {
             campo.style.borderBottomColor = 'red';
             campo.classList.add('error');
             alert('No esta ingresando un email, ingrese uno por favor');
         }
-        
 
-        function investigarEmail(){
+
+        function investigarEmail() {
             let bandera;
             fetch('http://localhost:3000/')
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                invitadosRegistrados = data.data;
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    invitadosRegistrados = data.data;
 
-                for (i = 0; i<invitadosRegistrados.length;i++){
-                    if(email.value == invitadosRegistrados[i].email){
-                        campo.style.borderBottomColor = 'red';
-                        campo.classList.add('error');
-                        enviar.disabled = true;
-                        bandera = true;
-                    }
-                }
-                if(bandera === true){
-                    alert ('Este email ya está registrado, ingrese otro por favor');
-                }else{
-                    if(nombre.value !== '' && apellido.value !== '' && email.value !== ''){
-                        if(errores.length === 0){
-                        enviar.disabled = false;
-                        }else{
-                        enviar.disabled = true;    
+                    for (i = 0; i < invitadosRegistrados.length; i++) {
+                        if (email.value == invitadosRegistrados[i].email) {
+                            campo.style.borderBottomColor = 'red';
+                            campo.classList.add('error');
+                            enviar.disabled = true;
+                            bandera = true;
                         }
                     }
-                }
-                
-            })
-            
+                    if (bandera === true) {
+                        alert('Este email ya está registrado, ingrese otro por favor');
+                    } else {
+                        if (nombre.value !== '' && apellido.value !== '' && email.value !== '') {
+                            if (errores.length === 0) {
+                                enviar.disabled = false;
+                            } else {
+                                enviar.disabled = true;
+                            }
+                        }
+                    }
+
+                })
+
         }
     }
 
-    function validarEmailAdm(campo){
-        
+    function validarEmailAdm(campo) {
+
         const validador = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w+)+$/;
-    
-        if(validador.test(campo.value)){
+
+        if (validador.test(campo.value)) {
             campo.style.borderBottomColor = 'green';
             campo.classList.remove('error');
-            
-        }else{
+
+        } else {
             campo.style.borderBottomColor = 'red';
             campo.classList.add('error');
             alert('No esta ingresando un email, ingrese uno por favor');
@@ -183,32 +183,32 @@ function validarCampo() {
 
 }
 
-function autorizaringresoAdm(){
+function autorizaringresoAdm() {
     let bandera;
-    for (i = 0; i<administradores.length;i++){
-        if(emailAdmIng == administradores[i].emailAdm && passwordIng == administradores[i].password){
+    for (i = 0; i < administradores.length; i++) {
+        if (emailAdmIng == administradores[i].emailAdm && passwordIng == administradores[i].password) {
             bandera = true;
             i = administradores.length;
         }
     }
-    if(bandera === true){
-        location.href="administracion.html";
-    }else{
-        alert ('Alguno de los datos ingresados son incorrectos');
+    if (bandera === true) {
+        location.href = "administracion.html";
+    } else {
+        alert('Alguno de los datos ingresados son incorrectos');
     }
     formAdministrador.reset();
-}    
+}
 
-function registroInvitado(e){
+function registroInvitado(e) {
     e.preventDefault();
-    let nuevo_invitado = new Invitado (nombre.value, apellido.value, email.value, true);
-    console.log(JSON.stringify(nuevo_invitado));
-    fetch('http://localhost:3000/',{
+    let nuevo_invitado = new Invitado(nombre.value, apellido.value, email.value);
+    fetch('http://localhost:3000/new-guest', {
         method: "POST",
         body: JSON.stringify(nuevo_invitado),
         headers: {
             'Content-Type': 'application/json'
         }
-    }); 
-    formRegistro.reset();
+    }).then(res => res.json())
+        .catch(error => console.error("Error:", error))
+        .then(response => console.log("Success:", response))
 }

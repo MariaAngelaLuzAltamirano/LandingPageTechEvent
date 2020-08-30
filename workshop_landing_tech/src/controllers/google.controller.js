@@ -17,7 +17,7 @@ const getRegistries = async (req, res) => {
 
 const saveRegistries = async (req, res) => {
   googleSheet.saveRegistry(req.body);
-  res.redirect('/')
+  res.json({ successfully: true })
 }
 
 module.exports = {
