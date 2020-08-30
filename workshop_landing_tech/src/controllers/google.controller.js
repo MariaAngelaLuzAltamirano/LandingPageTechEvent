@@ -20,7 +20,13 @@ const saveRegistries = async (req, res) => {
   res.json({ successfully: true })
 }
 
+const deleteRegistry = async (req,res) => {
+  googleSheet.deleteRegistry(req.body.deleteRow);
+  res.json({ successfully: true })
+}
+
 module.exports = {
   getRegistries,
-  saveRegistries
+  saveRegistries,
+  deleteRegistry,
 }

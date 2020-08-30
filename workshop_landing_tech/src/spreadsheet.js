@@ -13,6 +13,7 @@ async function accessGoogleSheet() {
   const sheet = document.sheetsByIndex[0];
   const registry = await sheet.getRows();
 
+  console.log(registry)
   return registry;
 }
 
@@ -27,8 +28,21 @@ async function saveRegistry(newRegistry){
 
 }
 
+async function deleteRegistry(deleteRegistry){
+
+  const document = new GoogleSpreadsheet(googleId);
+  await document.useServiceAccountAuth(credenciales);
+  await document.loadInfo();
+  const sheet = document.sheetsById[0];
+
+  const rows = await sheet.getRows();
+  await rows[deleteRegistry].delete()
+
+}
+
 
 module.exports = {
   accessGoogleSheet,
   saveRegistry,
+  deleteRegistry
 }
